@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.test {
+    color: #1561e6;
+    color: #e41b10;
+    color: #f6bf0b;
+    color: #1cad08;
+    color: #777777;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+html,
+body {
+    font-size: 16px;
+}
+
+:root {
+    --color-white: #e7e8f9;
+    --font-color: #333238;
+    --font-color-2: #555458;
+    --font-family: BlinkMacSystemFont, -apple-system, "Inter", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+#canvas {
+    border-radius: 8px;
+    outline: none;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--font-color);
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+    line-height: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--font-color-2);
+}
+
+#graph-editor {
+    width: 320px;
+    height: 100%;
+    resize: none;
+    border: 1px solid #c8c9db;
+    border-radius: 8px;
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    background-color: #ffffff;
+    margin-left: 2rem;
+}
+
+.container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 512px;
+}
+
+table {
+    /* border-radius: 8px;
+    overflow: hidden; */
+    user-select: none;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.5rem 1rem;
+    border: 1px solid #a0a0a0;
+    background-color: #ffffff;
+    width: 80px;
+    height: 36px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #a0a0a0;
+    border: 1px solid #7c7c7c;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.input {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #c8c9db;
+    background-color: #ffffff;
+    border-radius: 8px;
+    outline: none;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 14px;
+    color: #676669;
+    font-weight: 500;
+}
+a {
+    color: #176cfe;
+}
+
+.buttons {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons button {
+    line-height: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: var(--font-color);
+    border: 1px solid #c8c9db;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+}
+.editor {
+    margin-right: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: #676669;
+    font-weight: 400;
+}
+
+.info-container {
+    margin-left: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 240px;
+}
+
+ul {
+    margin-left: 1rem;
+}
+
+/*
+
+
+
+
+
+*/
+.slidecontainer {
+    margin-top: 1rem;
+}
+.slidecontainer > p {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.switch {
+    margin-bottom: 1rem;
+}
+.switch > span {
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+#table-desc {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}

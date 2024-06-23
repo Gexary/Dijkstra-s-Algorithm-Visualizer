@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--! add traffic -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijkstra's Algorithm Visualizer</title>
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Dijkstra's Algorithm Visualizer</h1>
+    <p>Graph visualization using Dijkstra's Algorithm</p>
+    <div class="container">
+        <div class="editor">
+            <p id="table-desc">Sélectionner une colonne pour afficher le chemin le plus court</p>
+            <table id="dijkstra-table">
+                <thead>
+                    <tr>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="slidecontainer">
+                <p>Animation Speed</p>
+                <input type="range" min="0" max="4000" value="3500" class="slider" id="animation-speed">
+            </div>
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button id="edit">Edit</button>
+                <button id="copy-btn">Copy</button>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="info-container">
+            <label class="switch">
+                <input id="attract-to-center" checked="checked" type="checkbox">
+                <span class="switch-text">Attract to the center</span>
+            </label>
+            <label class="switch">
+                <input id="force-directed-layout" checked="checked" type="checkbox">
+                <span class="switch-text">Force-Directed Layout</span>
+            </label>
+            <p class="info">
+                Guide d'utilisation :
+            </p>
+            <ul class="info">
+                <li>Pour créer un nœud, double-cliquez sur le graphe.</li>
+                <li>Pour créer un lien, double-cliquez sur le nœud de départ et sélectionner le nœud d'arrivée.</li>
+                <li>Pour sélectionner plusieurs nœuds, maintenez la touche Shift enfoncée.</li>
+                <li>Pour supprimer un nœud ou un lien, cliquez sur Suppr et la sélection sera supprimée.</li>
+                <li>Pour lancer la visualisation, cliquez sur le bouton "Start" puis cliquez sur le graphe.</li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="description">Made by Gexary • <a href="https://github.com/GexaryStudio/">GitHub</a>
+    </p>
+
+    <script src="./js/utils.js" type="module"></script>
+    <script src="./js/node.js" type="module"></script>
+    <script src="./js/edge.js" type="module"></script>
+    <script src="./js/graph.js" type="module"></script>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/dijkstra.js" type="module"></script>
+</body>
+
+</html>
